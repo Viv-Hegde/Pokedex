@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+  Name: Vivek Hegde
+  Date: July 29, 2022
+  Section: CSE 154 AB
+  This is the index.html page for my Creative Project 3 assignment, CSE 154: Web Programming.
+  It contains the basic structure of my API web project
+  along with an example of Pikachu's stats taken from PokeAPI.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap"
+      rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <!-- This image was retrieved from the below source -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/640px-Pok%C3%A9_Ball_icon.svg.png"
+        alt="pokeball">
+      <h1>PokeDex</h1>
+      <!-- This image was retrieved from the below source -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3bgQdHs4yQMjc9rKr47cN1uZtDy-JxgTfDgUMpy9AS9PSuhqWoGBuV_7iSWe_nJs3F8g&usqp=CAU"
+        alt="pokedex">
+      </header>
+    <section id="main">
+      <section id="search-bar">
+        <p>Enter pokemon name for more info!</p>
+        <input id="input-box" type="text" placeholder="EX: Pikachu">
+        <button id="search-btn">SEARCH</button>
+      </section>
+      <section id="display-card">
+        <img id="pokemon-img"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+          alt="pikachu">
+        <section id="details-container">
+          <p id="name">Pikachu</p>
+          <hr id="hp-bar">
+          <div id="hp-xp">
+            <span>HP 35/35</span>
+            <hr id="divider">
+            <span>XP 100/112</span>
+          </div>
+          <div id="attributes">
+            <div class="attribute">
+              <span>Electric</span>
+              <span>Type</span>
+            </div>
+            <div class="attribute">
+              <span>6 Kgs</span>
+              <span>Weight</span>
+            </div>
+            <div class="attribute">
+              <span>0.4 m</span>
+              <span>Height</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <footer>
+      All information on this page was retrieved from <a href="https://pokeapi.co/"> PokeAPI</a>
+    </footer>
+  </body>
+</html>

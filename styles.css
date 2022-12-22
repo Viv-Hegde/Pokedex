@@ -1,0 +1,115 @@
+/*
+  Name: Vivek Hegde
+  Date: July 29, 2022
+  Section: CSE 154 AB
+  This is the styles.css page that is used by index.html page for my CP-3 assignment.
+  It is inspired by the Pokedex and created using mostly neutral colors and colors that complement
+  the actual pokedex.
+*/
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+header, footer, #name, #details-container, #err-msg {
+  text-align: center;
+}
+
+header, #main, #hp-xp, #attributes, .attribute {
+  display: flex;
+}
+
+header {
+  font-family: 'Miltonian Tattoo', cursive;
+  font-size: larger;
+  justify-content: center;
+}
+
+header img {
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 32px;
+  height: 50px;
+}
+
+#main, #hp-xp, #attributes {
+  justify-content: space-around;
+}
+
+#search-bar {
+  margin-top: 150px;
+}
+
+#pokemon-img, #hp-xp {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pokemon-img {
+  display: block;
+  width: 70%;
+  height: 65%;
+  margin-bottom: 0px;
+}
+
+#display-card {
+  box-shadow: 0 0 10px 5px black;
+  width: 350px;
+  height: 425px;
+}
+
+#name, #hp-bar {
+  margin-top: -20px;
+}
+
+#name {
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+#details-container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#hp-bar {
+  height: 10px;
+  border-radius: 12%;
+  background-color: rgb(127, 255, 240);
+}
+
+#divider {
+  transform: rotate(90deg);
+  width: 10px;
+}
+
+#hp-xp, #hp-bar {
+  width: 55%;
+}
+
+#attributes {
+  margin-top: 20px;
+}
+
+.attribute {
+  flex-direction: column;
+}
+
+#name, .attribute span + span {
+  font-weight: bold;
+}
+
+footer, #search-bar, #hp-xp, #err-msg, .attribute {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+#err-msg {
+  line-height: 1000%;
+}
+
+footer {
+  background-color: rgb(188, 212, 234);
+  margin-top: 15px;
+}
